@@ -1,15 +1,11 @@
 # -*- coding: utf-8 -*-
-
 from linepy import *
-from akad.ttypes import *
-from multiprocessing import Pool, Process
-from gtts import gTTS
-from time import sleep
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 from bs4 import BeautifulSoup
-from googletrans import Translator
-from humanfriendly import format_timespan, format_size, format_number, format_length
-import time, random, sys, json, codecs, threading, glob, re, string, os, requests, six, ast, pytz, urllib, urllib3, urllib.parse, traceback, atexit
+from datetime import datetime, date
+from gtts import gTTS
+import time,random,sys,json,codecs,urllib,urllib3,requests,threading,glob,os,subprocess,multiprocessing,re,ast,shutil,calendar,tempfile,string,six,timeago
+from random import randint
 
 client = LINE("EtHgMthADlOiUjAl4Cc9.21sAkUOl2Bgb1ec67b74Iq.8NBqwIbXWVr17O+ZYANCuMCdDjLUJEjMLtzKNedOlCc=")
 client.log("Auth Token : " + str(client.authToken))
